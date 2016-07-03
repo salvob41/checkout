@@ -31,13 +31,10 @@ object Checkout {
   }
 
   def main(args: Array[String]) {
-
     val total = getTotal(args)
     val m = fruits.map(_.capitalize).groupBy(identity).mapValues(_.size)
     println(fruits.map(_.capitalize).mkString("[ ", ", ", " ]") + "=> £" + f" $total%1.2f")
     println(m)
-
   }
-
 
 }
